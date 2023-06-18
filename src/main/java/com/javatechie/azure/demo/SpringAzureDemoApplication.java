@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringAzureDemoApplication {
 
 	@GetMapping("/message")
-	public String message(){
-		return "<html><head><title>DevOps Project</title><style>body { background-color: lightblue; }</style></head><body><h1>Welcome to My Website</h1><p>This is a demo project for DevOps.</p></body></html>
-";
+	public String message(Model model) {
+        model.addAttribute("backgroundColor", "#f1f1f1"); // Replace with your desired background color
+        return "message";
+
 	}
 
 	public static void main(String[] args) {
