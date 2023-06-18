@@ -11,7 +11,8 @@ public class SpringAzureDemoApplication {
 
 	@GetMapping("/message")
 	public String message(){
-		return "Devops project ";
+		return "<html><head><title>DevOps Project</title><style>body { background-color: lightblue; }</style></head><body><h1>Welcome to My Website</h1><p>This is a demo project for DevOps.</p></body></html>
+";
 	}
 
 	public static void main(String[] args) {
