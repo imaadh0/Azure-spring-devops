@@ -11,7 +11,7 @@ public class SpringAzureDemoApplication {
 
 	@GetMapping("/message")
 	public String message(){
-         return "DevOps Project01";
+         return "DevOps Project";
 
 
 	}
